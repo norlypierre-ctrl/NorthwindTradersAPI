@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
     @RequestMapping(path = "", method = RequestMethod.GET)
-    public String index(@RequestParam(defaultValue = "Home Page") String name) {
-        return " Hello World " + name;
+    public String index(@RequestParam(defaultValue = "Country") String country) {
+        return " Country: " + country;
     }
 }
