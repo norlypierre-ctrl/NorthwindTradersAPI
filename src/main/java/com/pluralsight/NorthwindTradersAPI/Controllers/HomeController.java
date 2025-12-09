@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @RequestMapping(path = "/greetings", method = RequestMethod.GET)
-    public String index(@RequestParam(defaultValue = "World") String name) {
-        return "hello world " + name;
+    @RequestMapping(path = "", method = RequestMethod.GET)
+    public String index(@RequestParam(defaultValue = "Home Page") String name) {
+        return " Hello World " + name;
     }
 }
